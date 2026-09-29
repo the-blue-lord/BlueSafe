@@ -1,23 +1,26 @@
+
+<?php
+
+    include __DIR__ . "/../includes/functions.php";
+
+    $rel = calcRelativePath(realpath(__DIR__."/../public/"), dirname($_SERVER['SCRIPT_FILENAME']));
+
+?>
+
 <div id="menu-bar">
 
     <div id="site-logo" onclick="window.location.href=`../`">
 
-        <img id="logo" src="assets/images/favicon.png">
+        <img id="logo" src="<?php echo $rel ?>/assets/images/favicon.png">
         <div id="site-name">BlueSafe</div>
 
     </div>
 
     <div id="menu-items">
 
-        <?php
-
-            include "../includes/functions.php"
-
-        ?>
-
-        <a class="menu-item" href="./">Home</a>
-        <a class="menu-item" href="../area-personale/">Area Personale</a>
-        <a class="menu-item" href="../area-personale/">Vendi</a>
+        <a class="menu-item" href="<?php echo $rel ?>/">Home</a>
+        <a class="menu-item" href="<?php echo $rel ?>/area-personale/">Area Personale</a>
+        <a class="menu-item" href="<?php echo $rel ?>/vendi/">Vendi</a>
 
     </div>
 
