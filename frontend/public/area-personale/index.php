@@ -10,7 +10,7 @@
 
     <body>
 
-        <?php include "../components/menu-bar.php"; ?>
+        <?php include "../../components/menu-bar.php"; ?>
 
         <div id="content-parent">
             <img id="banner" src="../assets/images/banner.png">

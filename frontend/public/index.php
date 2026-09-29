@@ -11,11 +11,9 @@
 <body>
     <?php include "../components/menu-bar.php"; ?>
 
-    <div id="content-parent">
-        <img id="banner" src="assets/images/banner.png">
-        <div id="content">
-            BlueSafe
-        </div>
+    <img id="banner" src="assets/images/banner.png">
+    <div id="content">
+        BlueSafe
     </div>
 </body>
 
