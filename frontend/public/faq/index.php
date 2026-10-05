@@ -13,7 +13,7 @@
 
         <?php include "../../components/menu-bar.php"; ?>
         <main>
-            <h1>Benvenuto nella tua area personale</h1>
+            <h1>Domande Frequenti</h1>
         </main>
         
     </body>

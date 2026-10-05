@@ -7,6 +7,8 @@
 
 ?>
 
+<link rel="stylesheet" href="<?php echo $rel ?>/assets/css/menu-bar.css">
+
 <div id="menu-bar">
 
     <div id="site-logo" onclick="window.location.href=`../`">
@@ -21,6 +23,7 @@
         <a class="menu-item" href="<?php echo $rel ?>/">Home</a>
         <a class="menu-item" href="<?php echo $rel ?>/area-personale/">Area Personale</a>
         <a class="menu-item" href="<?php echo $rel ?>/vendi/">Vendi</a>
+        <a class="menu-item" href="<?php echo $rel ?>/faq/">FAQ</a>
 
     </div>
 

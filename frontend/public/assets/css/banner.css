@@ -1,0 +1,51 @@
+#banner-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a1c4d;
+
+    -webkit-mask-image: linear-gradient(
+        to left,
+        transparent 0%,
+        black 50%,
+        black 50%,
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+        to left,
+        transparent 0%,
+        black 50%,
+        black 50%,
+        transparent 100%
+    );
+}
+
+#banner {
+    width: 100%;
+}
+
+#banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(246, 198, 8);
+    font-size: 5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+#banner-text h4 {
+    margin-bottom: 20px;
+}
+
+#banner-text p {
+    font-size: 2rem;
+    color: white;
+    color: rgb(255, 204, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
+}
