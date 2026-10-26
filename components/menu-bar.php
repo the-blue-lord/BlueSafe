@@ -20,7 +20,7 @@
     <div id="menu-items">
 
         <a class="menu-item" href="<?php echo $rel ?>/">Home</a>
-        <a class="menu-item" href="<?php echo $rel ?>/area-personale/">Area Personale</a>
+        <a class="menu-item" href="<?php echo $rel ?>/area-personale/login.php">Area Personale</a>
         <a class="menu-item" href="<?php echo $rel ?>/vendi/">Vendi</a>
         <a class="menu-item" href="<?php echo $rel ?>/faq/">FAQ</a>
 
