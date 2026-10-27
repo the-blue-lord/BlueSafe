@@ -1,3 +1,19 @@
+<?php
+include_once "../../components/menu-bar.php";
+include_once "../../includes/functions.php";
+include_once "../../private/database.php";
+
+session_start();
+
+if(!isset($_SESSION["user_id"])) {
+    header("Location: ./login.php");
+    exit;
+}
+
+$debts = runQuery($db, "SELECT * FROM Debts WHERE user_id = :id", ["id" => $_SESSION["user_id"]]);
+
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -11,18 +27,12 @@
     </head>
 
     <body>
-
-        <?php include "../../components/menu-bar.php"; ?>
         <main>
             <h1>Benvenuto nella tua area personale</h1><br>
-            
-            
-            <?php                
-                $username = key_exists("username", $_POST) ? $_POST["username"] : "niente";
-                $password = key_exists("password", $_POST) ? $_POST["password"] : "niente";
-                $hashed = hash("sha256", $password);
-
-                echo 'Utente: ' . $username . '<br>Password: ' . $password . '<br>Hash: ' . $hashed;
+            <?php
+                foreach($debts as $debt) {
+                    echo makeDebtDiv($debt);
+                }
             ?>
         </main>
     </body>

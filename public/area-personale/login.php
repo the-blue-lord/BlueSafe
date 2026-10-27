@@ -1,3 +1,32 @@
+<?php
+
+include_once "../../components/menu-bar.php";
+include_once "../../private/database.php";
+include_once "../../includes/functions.php";
+
+session_start();
+var_dump($_SESSION);
+
+$username = key_exists("username", $_POST) ? $_POST["username"] : null;
+$password = key_exists("password", $_POST) ? $_POST["password"] : null;
+
+$error_message = "";
+
+$db_user = runQuerySingle($db, "SELECT * FROM Users WHERE username = :u", ["u" => $username]);
+$res = checkUser($username, $password, $db_user);
+
+if($res == 1) $error_message = "Utente non trovato";
+else if($res == 2) $error_message = "Password errata";
+else if($res == 3) {
+    session_regenerate_id(true);
+    $_SESSION["user_id"] = $db_user["user_id"];
+
+    header("Location: ../area-personale", true, 303);
+    exit;
+}
+
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -11,21 +40,10 @@
     </head>
 
     <body>
-
-        <?php include "../../components/menu-bar.php"; ?>
         <main>
-            <h1>Benvenuto nella tua area personale</h1><br>
+            <h1>Accedi alla tua area personale</h1><br>
 
-            
-
-            <?php
-                $username = key_exists("username", $_POST) ? $_POST["username"] : null;
-                $password = key_exists("password", $_POST) ? $_POST["password"] : null;
-                $hashed = hash("sha256", $password);
-
-                $error_message = "Password errata";
-            ?>
-            <form id="login" action="index.php" method="POST">
+            <form id="login" action="login.php" method="POST">
 
                 Username
                 <input type="text" name="username" placeholder=" " required>
@@ -39,8 +57,8 @@
                     $time = date("H:i:s");
                     if($error_message) echo '<span class="little-error">' . $error_message . ' alle ' . $time . '</span>';
                 ?>
-
             </form>
+
         </main>
     </body>
 
