@@ -6,6 +6,7 @@
 
 ?>
 
+<link rel="icon" type="image/x-icon" href="<?php echo $rel ?>/assets/images/favicon.png">
 <link rel="stylesheet" href="<?php echo $rel ?>/assets/css/menu-bar.css">
 
 <div id="menu-bar">
