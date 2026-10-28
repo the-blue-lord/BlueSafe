@@ -13,7 +13,14 @@
     </p>
 
     <p class="debt-value deb_lor debt_divider">
-        <span>Lordo</span>
+        <span>Lordo
+
+        <span class="tooltip">
+            <span class="tooltip-icon">?</span>
+            <span class="tooltip-message">NETTO + INTERESSI</span>
+        </span>
+
+        </span>
         <span><?= number_format($debt["amount"] + $debt["interest"], 2, ',', '.') ?> €</span>
     </p>
 
@@ -23,7 +30,13 @@
     </p>
 
     <p class="debt-value deb_rim debt_divider">
-        <span>Rimanente</span>
+        <span>Rimanente
+
+            <span class="tooltip">
+                <span class="tooltip-icon">?</span>
+                <span class="tooltip-message">LORDO - PAGATO</span>
+            </span>
+        </span>
         <span><?= number_format($debt["amount"] + $debt["interest"] - $debt["amount_paid"], 2, ',', '.') ?> €</span>
     </p>
 

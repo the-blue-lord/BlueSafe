@@ -24,6 +24,7 @@ $debts = runQuery($db, "SELECT * FROM Debts WHERE user_id = :id", ["id" => $_SES
         <link rel="stylesheet" href="../assets/css/main.css">
         <link rel="stylesheet" href="../assets/css/text.css">
         <link rel="stylesheet" href="../assets/css/debts.css">
+        <link rel="stylesheet" href="../assets/css/tooltip.css">
     </head>
 
     <body>
