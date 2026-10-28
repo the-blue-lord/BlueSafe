@@ -16,7 +16,7 @@
             <img id="banner" src="assets/images/banner.png">
             <div id="banner-text">
                 <h4>BlueSafe</h4>
-                <p>La piattaforma numero 1 per vendere i tuoi oggetti</p>
+                <p>La piattaforma numero 1 per perdere i tuoi soldi</p>
             </div>
         </div>
         <main>

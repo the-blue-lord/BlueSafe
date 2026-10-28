@@ -23,17 +23,15 @@ $debts = runQuery($db, "SELECT * FROM Debts WHERE user_id = :id", ["id" => $_SES
         <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
         <link rel="stylesheet" href="../assets/css/main.css">
         <link rel="stylesheet" href="../assets/css/text.css">
-        <link rel="stylesheet" href="../assets/css/input.css">
+        <link rel="stylesheet" href="../assets/css/debts.css">
     </head>
 
     <body>
         <main>
             <h1>Benvenuto nella tua area personale</h1><br>
-            <?php
-                foreach($debts as $debt) {
-                    echo makeDebtDiv($debt);
-                }
-            ?>
+            <div id="debts-container">
+                <?php foreach($debts as $debt) echo makeDebtDiv($debt);?>
+            </div>
         </main>
     </body>
 
