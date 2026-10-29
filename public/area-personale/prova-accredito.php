@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 
 if(!isset($_SESSION["user_id"])) {
@@ -28,6 +29,8 @@ header("Content-Type: application/pdf");
 header("Content-Disposition: inline; filename=\"prova-accredito-" . $debt_id . ".pdf\"");
 
 echo $debt["proof"];
+
+session_write_close();
 
 exit;
 

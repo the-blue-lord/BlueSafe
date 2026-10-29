@@ -1,10 +1,10 @@
 <?php
 
+session_start();
+
 include_once "../../components/menu-bar.php";
 include_once "../../private/database.php";
 include_once "../../includes/functions.php";
-
-session_start();
 
 $username = key_exists("username", $_POST) ? $_POST["username"] : null;
 $password = key_exists("password", $_POST) ? $_POST["password"] : null;

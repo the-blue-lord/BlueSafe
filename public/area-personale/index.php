@@ -1,9 +1,10 @@
 <?php
+
+session_start();
+
 include_once "../../components/menu-bar.php";
 include_once "../../includes/functions.php";
 include_once "../../private/database.php";
-
-session_start();
 
 if(!isset($_SESSION["user_id"])) {
     header("Location: ./login.php");
