@@ -1,4 +1,4 @@
-// Insert donw here the variables requested to connect your database and rename the file env.php
+// Insert down here the variables requested to connect your database and rename the file env.php
 
 <?php
     $db_host = "database_service_host_ip";
