@@ -1,16 +1,10 @@
-<?php
-
-include_once __DIR__ . "/../../../includes/functions.php";
-
-?>
-
 <!DOCTYPE html>
 
 <html>
 
     <head>
         <title>BlueSafe</title>
-        <link rel="icon" type="image/x-icon" href="/bluesafe/assets/images/favicon.png">
+        <link rel="icon" type="image/x-icon" href="<?=$_SERVER['SCRIPT_NAME']?>/../../assets/images/favicon.png">
         <link rel="stylesheet" href="<?=$_SERVER['SCRIPT_NAME']?>/../../assets/css/main.css">
         <link rel="stylesheet" href="<?=$_SERVER['SCRIPT_NAME']?>/../../assets/css/text.css">
     </head>

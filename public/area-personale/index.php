@@ -7,7 +7,6 @@ if(!isset($_SESSION["user_id"])) {
     exit;
 }
 
-include_once "../../components/menu-bar.php";
 include_once "../../includes/functions.php";
 include_once "../../private/database.php";
 
@@ -68,6 +67,7 @@ foreach($debts as $debt) {
     </head>
 
     <body>
+        <?php include_once "../../components/menu-bar.php"; ?>
         <main>
             <h1>Benvenuto nella tua area personale</h1><br>
             <div class="debts-container">

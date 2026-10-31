@@ -14,8 +14,8 @@ $rel = calcRelativePath(realpath(__DIR__."/../public/"), $_SERVER['SCRIPT_FILENA
 
 ?>
 
-<link rel="icon" type="image/x-icon" href="<?=$_SERVER['SCRIPT_NAME']."/".$rel ?>/assets/images/favicon.png">
 <link rel="stylesheet" href="<?=$_SERVER['SCRIPT_NAME']."/".$rel ?>/assets/css/menu-bar.css">
+
 <script src="<?=$_SERVER['SCRIPT_NAME']."/".$rel ?>/assets/scripts/menu-bar.js"></script>
 
 <div id="menu-bar">

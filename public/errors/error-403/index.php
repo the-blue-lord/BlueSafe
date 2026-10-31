@@ -4,9 +4,9 @@
 
     <head>
         <title>BlueSafe</title>
-        <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.png">
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="../../assets/css/text.css">
+        <link rel="icon" type="image/x-icon" href="<?=$_SERVER['SCRIPT_NAME']?>/../../assets/images/favicon.png">
+        <link rel="stylesheet" href="<?=$_SERVER['SCRIPT_NAME']?>/../../assets/css/main.css">
+        <link rel="stylesheet" href="<?=$_SERVER['SCRIPT_NAME']?>/../../assets/css/text.css">
     </head>
 
     <body>

@@ -22,8 +22,6 @@ else if($res == 3) {
     exit;
 }
 
-include_once "../../components/menu-bar.php";
-
 ?>
 
 <!DOCTYPE html>
