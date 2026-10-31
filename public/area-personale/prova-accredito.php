@@ -2,8 +2,10 @@
 
 session_start();
 
+$run = "";
+
 if(!isset($_SESSION["user_id"])) {
-    header("Location: ./login.php");
+    echo '<script>window.close();</script>';
     exit;
 }
 
@@ -11,7 +13,7 @@ include_once "../../includes/functions.php";
 include_once "../../private/database.php";
 
 if(!isset($_GET["id"])) {
-    header("Location: ../area-personale");
+    echo '<script>window.close();</script>';
     exit;
 }
 
@@ -20,8 +22,8 @@ $debt_id = (int) $_GET["id"];
 
 $debt = runQuerySingle($db, "SELECT * FROM Debts WHERE debt_id = :d AND user_id = :u", ["d" => $debt_id, "u" => $user_id]);
 
-if(!$debt) {
-    header("Location: ../area-personale");
+if(!isset($debt["proof"])) {
+    echo '<script>window.close();</script>';
     exit;
 }
 

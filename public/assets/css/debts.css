@@ -12,19 +12,31 @@
     background-color: rgb(6, 92, 141);
     border-radius: 15px;
     width: 100%;
+    margin: 20px;
 }
 
 .debt h2 {
     margin: 0;
 }
 .debt h4 {
-    margin: 30px 0 70px 0;
+    margin: 30px 0 40px 0;
     font-weight: normal;
     text-align: justify;
 }
 
 .debt p, .debt a {
     margin: 7px 0;
+}
+
+.debt a {
+    color: aqua;
+}
+.debt a:hover {
+    color: rgba(0, 255, 255, 0.65);
+}
+
+.invisible {
+    visibility: hidden;
 }
 
 .debt .deb_net {
@@ -46,6 +58,14 @@
     padding-top: 14px;
 }
 
-a {
-    color: aqua;
+.active {
+    background-color: brown;
+}
+
+.pseudo-active {
+    background-color:orange
+}
+
+.closed {
+    background-color: olivedrab;
 }

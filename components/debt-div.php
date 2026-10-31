@@ -1,6 +1,18 @@
-<div class="debt">
+<?php
+
+$type = "active";
+
+if($debt["amount"] - $debt["amount_paid"] <= 0) $type = "pseudo-active";
+
+if($debt["amount"] + $debt["interest"] - $debt["amount_paid"] <= 0) $type = "closed";
+
+if($debt["debt_id"] == 0) $type ="";
+
+?>
+
+<div class="debt <?=$type?>">
     <h2> <?= $debt["title"]?> </h2>
-    <h4> <?= $debt["description"]?> </h4>
+    <h4><?= $debt["description"]?></h4>
 
     <p class="debt-value deb_net">
         <span>Netto</span>
@@ -8,7 +20,7 @@
     </p>
 
     <p class="debt-value deb_int">
-        <span>Interessi</span>
+        <span>Servizi</span>
         <span><?= number_format($debt["interest"], 2, ',', '.') ?> €</span>
     </p>
 
@@ -17,7 +29,7 @@
 
         <span class="tooltip">
             <span class="tooltip-icon">?</span>
-            <span class="tooltip-message">NETTO + INTERESSI</span>
+            <span class="tooltip-message">NETTO + SERVIZI</span>
         </span>
 
         </span>
@@ -42,5 +54,7 @@
 
     <br>
 
-    <a href="prova-accredito.php?id=<?= number_format($debt["debt_id"], 2, ',', '.')?>" target="_blank" rel="noopener">Prova d'accredito</a>
+    <a class="<?php if(!isset($debt["proof"])) echo "invisible"; ?>" href="prova-accredito.php?id=<?=$debt["debt_id"]?>" target="_blank" rel="noopener">
+        Prova d'accredito
+    </a>
 </div>

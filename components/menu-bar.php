@@ -9,7 +9,7 @@ $loggedin = 0;
 $loggedin = isset($_SESSION["user_id"]);
 
 
-include __DIR__ . "/../includes/functions.php";
+include_once __DIR__ . "/../includes/functions.php";
 
 $rel = calcRelativePath(realpath(__DIR__."/../public/"), dirname($_SERVER['SCRIPT_FILENAME']));
 
@@ -32,8 +32,9 @@ $rel = calcRelativePath(realpath(__DIR__."/../public/"), dirname($_SERVER['SCRIP
 
         <a class="menu-item" href="<?php echo $rel ?>/">Home</a>
         <a class="menu-item" href="<?php echo $rel ?>/area-personale/">Area Personale</a>
-        <a class="menu-item" href="<?php echo $rel ?>/vendi/">Vendi</a>
+        <!--<a class="menu-item" href="<?php echo $rel ?>/vendi/">Vendi</a> -->
         <a class="menu-item" href="<?php echo $rel ?>/faq/">FAQ</a>
+        <!--<a class="menu-item" href="<?php echo $rel ?>/github-repo/">Github Repo</a>-->
 
     </div>
 

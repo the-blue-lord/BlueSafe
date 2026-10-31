@@ -17,6 +17,7 @@
 }
 
 .tooltip-message {
+    white-space: nowrap;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -29,6 +30,7 @@
     padding: 5px;
     border: 1px solid rgba(156, 156, 156, 0.8);
     visibility: hidden;
+    text-align: center;
 }
 
 .tooltip:hover .tooltip-message {

@@ -1,0 +1,40 @@
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #f8fafc;
+    background-color: #0c3168;
+    box-sizing: border-box;
+    font-size: 18px;
+    user-select: none;
+    height: fit-content;
+    z-index: 100;
+    gap: 2px;
+    padding: 15px;
+}
+
+a {
+    text-decoration: underline;
+    color: #f8fafc;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #3988aa;
+    text-decoration: none;
+}
+
+#footer p {
+    margin: 10px;
+}
+
+#footer #last {
+    margin-left: auto;
+}
+
+.divider {
+    border-top: 1px solid white;
+    width: 50px;
+}

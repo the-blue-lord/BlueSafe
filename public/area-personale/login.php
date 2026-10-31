@@ -61,4 +61,6 @@ else if($res == 3) {
         </main>
     </body>
 
+    <?php include "../../components/footer.php"; ?>
+
 </html>
