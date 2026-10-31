@@ -1,22 +1,9 @@
 <?php
-
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
-
-$loggedin = 0;
-
-$loggedin = isset($_SESSION["user_id"]);
-
-
 include_once __DIR__ . "/../includes/functions.php";
-
-$rel = calcRelativePath(realpath(__DIR__."/../public/"), dirname($_SERVER['SCRIPT_FILENAME']));
-
+$rel = calcRelativePath(realpath(__DIR__."/../public/"), $_SERVER['SCRIPT_FILENAME']);
 ?>
 
-<link rel="icon" type="image/x-icon" href="<?php echo $rel ?>/assets/images/favicon.png">
-<link rel="stylesheet" href="<?php echo $rel ?>/assets/css/footer.css">
+<link rel="stylesheet" href="<?=$_SERVER['SCRIPT_NAME']."/".$rel ?>/assets/css/footer.css">
 
 <div id="footer">
 
