@@ -15,9 +15,9 @@
         <main>
             <h1>Vuoi vendere qualche tuo oggetto?</h1>
         </main>
+
+        <?php include "../../components/footer.php"; ?>
         
     </body>
-
-    <?php include "../../components/footer.php"; ?>
 
 </html>

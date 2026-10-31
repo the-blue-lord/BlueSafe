@@ -17,9 +17,9 @@
             Dove stai cercando di andare? <br><br>
             Sei sicuro sia una pagina a cui puoi accedere?
         </main>
+
+        <?php include "../../../components/footer.php"; ?>
         
     </body>
-
-    <?php include "../../../components/footer.php"; ?>
 
 </html>

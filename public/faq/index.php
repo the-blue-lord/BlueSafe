@@ -30,7 +30,7 @@
             <h3>Qualcuno ha mai effettivamente fatto queste domande?</h3>
             <p>No, nessuno. Qualche probelma?</p><br>
 
-            <h3>Allora perché sono segnate come "domande frquenti"?</h3>
+            <h3>Allora perché sono segnate come "domande frequenti"?</h3>
             <p>Ma ti fai i fatti tuoi? Pensa a ridare i soldi.</p><br>
 
             <h3>E comunque sopra hai scritto "probelma" anziché "problema"...</h3>
@@ -42,9 +42,9 @@
             <h3>Come mai questo dialogo maleducato anziché delle vere domande?</h3>
             <p>Richiede meno tempo e sforzo e riempie di più la pagina.</p><br>
         </main>
+
+        <?php include "../../components/footer.php"; ?>
         
     </body>
-
-    <?php include "../../components/footer.php"; ?>
 
 </html>

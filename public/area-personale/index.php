@@ -2,14 +2,14 @@
 
 session_start();
 
-include_once "../../components/menu-bar.php";
-include_once "../../includes/functions.php";
-include_once "../../private/database.php";
-
 if(!isset($_SESSION["user_id"])) {
     header("Location: ./login.php");
     exit;
 }
+
+include_once "../../components/menu-bar.php";
+include_once "../../includes/functions.php";
+include_once "../../private/database.php";
 
 $debts = runQuery($db, "SELECT * FROM Debts WHERE user_id = :id", ["id" => $_SESSION["user_id"]]);
 
@@ -70,17 +70,18 @@ foreach($debts as $debt) {
     <body>
         <main>
             <h1>Benvenuto nella tua area personale</h1><br>
-            <div id="debts-container">
+            <div class="debts-container">
                 <?php
                     foreach($totals as $total) echo makeDebtDiv($total);
                 ?>
             </div>
-            <div id="debts-container">
+            <div class="debts-container">
                 <?php foreach($active as $debt)  echo makeDebtDiv($debt); foreach($closed as $debt)  echo makeDebtDiv($debt);?>
             </div>
         </main>
-    </body>
 
-    <?php include "../../components/footer.php"; ?>
+        <?php include "../../components/footer.php"; ?>
+
+    </body>
 
 </html>

@@ -21,7 +21,7 @@
         </div>
         <main>
             <h1>Benvenuto su BlueSafe</h1>
-            <p>Tieni sempre sott'occhio la tua situazione in tempo reale tramite questo (quasi) efficentissimo sito.</p><br><br>
+            <p>Tieni sempre sott'occhio la tua situazione in tempo reale tramite questo (quasi) efficientissimo sito.</p><br><br>
 
             <h2>Le pagine del sito</h2>
 
@@ -32,7 +32,7 @@
             <p>Che vuoi che sia? L'unica pagina interessante dove trovi tutto quello che vuoi sapere. Vai lì.</p><br>
 
             <h3>FAQ:</h3>
-            <p>Le frequentissime domande che vengono ricevute riguardo al sito. La pagina è tanto vuota quanto inutile (non c'è assolutemente niente), ma come per la home rende il tutto un po' più realisticamente credibile.</p>
+            <p>Le frequentissime domande che vengono ricevute riguardo al sito. La pagina è tanto vuota quanto inutile (non c'è assolutamente niente), ma come per la home rende il tutto un po' più realisticamente credibile.</p>
         </main>
 
         <?php include "../components/footer.php"; ?>

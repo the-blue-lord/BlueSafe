@@ -1,8 +1,6 @@
 <?php
 
 session_start();
-
-include_once "../../components/menu-bar.php";
 include_once "../../private/database.php";
 include_once "../../includes/functions.php";
 
@@ -23,6 +21,8 @@ else if($res == 3) {
     header("Location: ../area-personale", true, 303);
     exit;
 }
+
+include_once "../../components/menu-bar.php";
 
 ?>
 
@@ -59,8 +59,9 @@ else if($res == 3) {
             </form>
 
         </main>
-    </body>
 
-    <?php include "../../components/footer.php"; ?>
+        <?php include "../../components/footer.php"; ?>
+        
+    </body>
 
 </html>

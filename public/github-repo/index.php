@@ -31,10 +31,9 @@
             </div>
         </main>
         
+        <?php include "../../components/footer.php"; ?>
+        
     </body>
-
-    <?php include "../../components/footer.php"; ?>
-
 
     <script src="assets/scripts/github.js"></script>
 

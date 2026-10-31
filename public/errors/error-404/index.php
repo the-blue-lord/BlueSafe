@@ -15,9 +15,9 @@
             Spiacenti, ma la pagina che cerchi non esiste o è stata rimossa. <br><br>
             Sei proprio sicuro di non aver sbagliato qualcosa o di non avere informazioni obsolete?
         </main>
+
+        <?php include "../../../components/footer.php"; ?>
         
     </body>
-
-    <?php include "../../../components/footer.php"; ?>
 
 </html>
