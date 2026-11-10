@@ -8,13 +8,13 @@ $rel = calcRelativePath(realpath(__DIR__."/../public/"), $_SERVER['SCRIPT_FILENA
 <div id="footer">
 
     <p>
-        Creato e mantenuto da Mr. Blue (<a href="https://github.com/the-blue-lord" target="_blank">the-blue-lord</a>)
+        Created and maintained by Mr. Blue (<a href="https://github.com/the-blue-lord" target="_blank">the-blue-lord</a>)
     </p>
 
     <div class="divider"></div>
 
     <p>
-        Open source code, available at the <a href="https://github.com/the-blue-lord/BlueSafe" target="_blank">github project repository</a>
+        Open source code available at the <a href="https://github.com/the-blue-lord/BlueSafe" target="_blank">github project repository</a>
     </p>
 
 </div>
