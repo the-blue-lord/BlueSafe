@@ -14,7 +14,7 @@ $rel = calcRelativePath(realpath(__DIR__."/../public/"), $_SERVER['SCRIPT_FILENA
     <div class="divider"></div>
 
     <p>
-        Codice sorgente open source disponibile alla <a href="https://github.com/the-blue-lord/BlueSafe" target="_blank">repository del progetto</a>
+        Open source code, available at the <a href="https://github.com/the-blue-lord/BlueSafe" target="_blank">github project repository</a>
     </p>
 
 </div>
