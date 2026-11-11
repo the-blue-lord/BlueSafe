@@ -13,7 +13,7 @@
     <body>
         <?php include "../components/menu-bar.php"; ?>
         <div id="banner-container">
-            <img id="banner" src="assets/images/banner.png">
+            <img id="banner" src="assets/images/banner-compressed.png">
             <div id="banner-text">
                 <h4>BlueSafe</h4>
                 <!--<p>La piattaforma numero 1 per perdere i tuoi soldi</p>-->
