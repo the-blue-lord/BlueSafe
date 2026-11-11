@@ -37,6 +37,7 @@ else if($res == 3) {
     </head>
 
     <body>
+        <?php include_once "../../components/menu-bar.php"; ?>
         <main>
             <h1>Accedi alla tua area personale</h1><br>
 
