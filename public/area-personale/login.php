@@ -45,10 +45,10 @@ else if($res == 3) {
             <form id="login" action="login.php" method="POST">
 
                 Username
-                <input type="text" name="username" placeholder=" " required>
+                <input type="text" name="username" placeholder=" " value="<?=$username?>" required>
 
                 Password
-                <input type="password" name="password" placeholder=" " required>
+                <input type="password" name="password" placeholder=" " value="<?=$password?>" required>
 
                 <input type="submit" value="Accedi">
             
