@@ -36,3 +36,14 @@ function makeDebtDiv($debt) {
 
     return ob_get_clean();
 }
+
+function logAccess(string $username) {
+    $log_file = __DIR__ . "/../private/access.log";
+    $time = date("Y-m-d H:i:s");
+    $ip = $_SERVER["REMOTE_ADDR"];
+    $user_agent = $_SERVER["HTTP_USER_AGENT"];
+
+    $log_entry = "[$time] New Access\n\tUser: $username\n\tRemote adress: $ip\n\tTimestamp: $time\n\tAgent: $user_agent\n\n";
+
+    file_put_contents($log_file, $log_entry, FILE_APPEND);
+}

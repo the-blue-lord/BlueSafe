@@ -16,6 +16,7 @@ if($res == 1) $error_message = "Utente non trovato";
 else if($res == 2) $error_message = "Password errata";
 else if($res == 3) {
     session_regenerate_id(true);
+    logAccess($username);
     $_SESSION["user_id"] = $db_user["user_id"];
 
     header("Location: ../area-personale", true, 303);
